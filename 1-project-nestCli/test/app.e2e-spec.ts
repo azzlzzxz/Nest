@@ -1,7 +1,14 @@
+/*
+ * @Author: xinxu
+ * @Date: 2023-06-07 11:24:46
+ * @LastEditors: xinxu
+ * @LastEditTime: 2023-06-07 14:57:56
+ * @FilePath: /Nest/1-project-nestCli/test/app.e2e-spec.ts
+ */
 import { Test, TestingModule } from '@nestjs/testing';
 import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
-import { AppModule } from './../src/app.module';
+import { AppModule } from '../src/app.module';
 
 describe('AppController (e2e)', () => {
   let app: INestApplication;
