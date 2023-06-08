@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AaaService = void 0;
 const common_1 = require("@nestjs/common");
-let AaaService = exports.AaaService = class AaaService {
+let AaaService = class AaaService {
 };
-exports.AaaService = AaaService = __decorate([
+AaaService = __decorate([
     (0, common_1.Injectable)()
 ], AaaService);
+exports.AaaService = AaaService;
 //# sourceMappingURL=aaa.service.js.map

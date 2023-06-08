@@ -12,13 +12,14 @@ const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
 const aaa_module_1 = require("./aaa/aaa.module");
 const xxx_module_1 = require("./xxx/xxx.module");
-let AppModule = exports.AppModule = class AppModule {
+let AppModule = class AppModule {
 };
-exports.AppModule = AppModule = __decorate([
+AppModule = __decorate([
     (0, common_1.Module)({
         imports: [aaa_module_1.AaaModule, xxx_module_1.XxxModule],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
     })
 ], AppModule);
+exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

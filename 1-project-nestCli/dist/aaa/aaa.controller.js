@@ -8,9 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AaaController = void 0;
 const common_1 = require("@nestjs/common");
-let AaaController = exports.AaaController = class AaaController {
+let AaaController = class AaaController {
 };
-exports.AaaController = AaaController = __decorate([
+AaaController = __decorate([
     (0, common_1.Controller)('aaa')
 ], AaaController);
+exports.AaaController = AaaController;
 //# sourceMappingURL=aaa.controller.js.map

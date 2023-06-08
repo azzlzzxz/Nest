@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.XxxService = void 0;
 const common_1 = require("@nestjs/common");
-let XxxService = exports.XxxService = class XxxService {
+let XxxService = class XxxService {
     create(createXxxDto) {
         return 'This action adds a new xxx';
     }
@@ -25,7 +25,8 @@ let XxxService = exports.XxxService = class XxxService {
         return `This action removes a #${id} xxx`;
     }
 };
-exports.XxxService = XxxService = __decorate([
+XxxService = __decorate([
     (0, common_1.Injectable)()
 ], XxxService);
+exports.XxxService = XxxService;
 //# sourceMappingURL=xxx.service.js.map

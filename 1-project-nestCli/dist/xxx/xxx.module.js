@@ -10,12 +10,13 @@ exports.XxxModule = void 0;
 const common_1 = require("@nestjs/common");
 const xxx_service_1 = require("./xxx.service");
 const xxx_controller_1 = require("./xxx.controller");
-let XxxModule = exports.XxxModule = class XxxModule {
+let XxxModule = class XxxModule {
 };
-exports.XxxModule = XxxModule = __decorate([
+XxxModule = __decorate([
     (0, common_1.Module)({
         controllers: [xxx_controller_1.XxxController],
         providers: [xxx_service_1.XxxService],
     })
 ], XxxModule);
+exports.XxxModule = XxxModule;
 //# sourceMappingURL=xxx.module.js.map
