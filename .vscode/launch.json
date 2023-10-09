@@ -29,7 +29,7 @@
         },
         {
             "name": "Launch Program",
-            "program": "${workspaceFolder}/3-project-nest-ioc",
+            "program": "${workspaceFolder}/5-project-provider",
             "request": "launch",
             "stopOnEntry": true,
             "skipFiles": [
