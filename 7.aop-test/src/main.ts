@@ -12,7 +12,7 @@ async function bootstrap() {
     console.log('after');
   });
 
-  app.useGlobalGuards(new LoginGuard());
+  // app.useGlobalGuards(new LoginGuard());
 
   await app.listen(3000);
 }
