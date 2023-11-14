@@ -4,11 +4,19 @@ import {
   Injectable,
   NestInterceptor,
 } from '@nestjs/common';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 
 @Injectable()
 export class TimeInterceptor implements NestInterceptor {
   intercept(context: ExecutionContext, next: CallHandler): Observable<any> {
-    return next.handle();
+    const startTime = Date.now();
+
+    console.log(context.getClass(), context.getHandler());
+
+    return next.handle().pipe(
+      tap(() => {
+        console.log(`time: ${Date.now() - startTime}ms`);
+      }),
+    );
   }
 }
